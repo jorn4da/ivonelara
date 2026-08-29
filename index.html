@@ -66,8 +66,8 @@ a{text-decoration:none;color:inherit}
 .btn-block{width:100%}
 
 /* Header */
-header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.3s;padding:18px 0}
-header.scrolled{background:rgba(14,51,34,.96);backdrop-filter:blur(10px);padding:11px 0;box-shadow:0 6px 22px rgba(0,0,0,.25)}
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.3s;padding:20px 0;background:linear-gradient(180deg,rgba(20,8,14,.62) 0%,rgba(20,8,14,.28) 60%,rgba(20,8,14,0) 100%)}
+header.scrolled{background:rgba(51,18,38,.96);backdrop-filter:blur(10px);padding:11px 0;box-shadow:0 6px 22px rgba(0,0,0,.28)}
 .nav{display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{height:26px;filter:brightness(0) invert(1)}
@@ -84,7 +84,9 @@ header.scrolled{background:rgba(14,51,34,.96);backdrop-filter:blur(10px);padding
 
 /* Hero */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(140% 120% at 80% 0%,var(--green-lt) 0%,var(--green) 42%,var(--green-2) 100%)}
-.hero::before{content:"";position:absolute;top:0;right:0;width:46%;height:100%;z-index:0;opacity:.10;background:repeating-linear-gradient(135deg,var(--gold) 0 22px,transparent 22px 60px)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg video{width:100%;height:100%;object-fit:cover;display:block}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(28,10,20,.55) 0%,rgba(28,10,20,0) 16%),linear-gradient(90deg,rgba(28,10,20,.82) 0%,rgba(28,10,20,.55) 46%,rgba(28,10,20,.3) 100%)}
 .hero .container{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:1.12fr .88fr;gap:50px;align-items:center;padding-top:96px;padding-bottom:60px}
 .hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(217,164,65,.16);border:1px solid rgba(240,206,126,.4);color:var(--gold-lt);padding:8px 16px;border-radius:999px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:22px}
 .hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(217,164,65,.28)}
@@ -267,7 +269,6 @@ footer a:hover{color:var(--gold-lt)}
 </style>
 </head>
 <body id="topo">
-<div class="samba-bar"></div>
 
 <!-- HEADER -->
 <header id="head">
@@ -292,6 +293,11 @@ footer a:hover{color:var(--gold-lt)}
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+      <source src="assets/video/hero-web.mp4" type="video/mp4" />
+    </video>
+  </div>
   <div class="container">
     <div class="hero-copy">
       <span class="hero-badge"><span class="dot"></span> Lançamento Cury · 01 de Outubro</span>
@@ -633,6 +639,17 @@ footer a:hover{color:var(--gold-lt)}
 <script>
 var head=document.getElementById('head');
 window.addEventListener('scroll',function(){ if(window.scrollY>60) head.classList.add('scrolled'); else head.classList.remove('scrolled'); });
+
+// Vídeo do topo em loop contínuo (reforço p/ não travar em qualquer navegador)
+(function(){
+  var hv=document.getElementById('heroVideo'); if(!hv) return;
+  hv.loop=true; hv.muted=true;
+  hv.addEventListener('ended',function(){ this.currentTime=0; this.play().catch(function(){}); });
+  function fp(){ hv.play().catch(function(){}); }
+  hv.addEventListener('canplay',fp);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) fp(); });
+  fp();
+})();
 
 var WPP_NUMBER='5521959434519';
 var EMP='Residencial Ivone Lara (ao lado Rio Wonder)';
