@@ -192,10 +192,8 @@ header.scrolled{background:rgba(51,18,38,.96);backdrop-filter:blur(10px);padding
 .map-box iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
 
 /* Lazer */
-.lazer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.lz{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:22px 16px;text-align:center}
-.lz .ic{font-size:1.7rem;margin-bottom:8px}
-.lz b{font-family:'Inter';font-weight:600;font-size:.92rem;color:#fff;display:block}
+.lazer-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:840px;margin:0 auto}
+.lazer-chips span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;padding:11px 20px;border-radius:999px;font-size:.96rem;font-weight:500}
 
 /* Oferta */
 .oferta{background:linear-gradient(160deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:var(--radius-lg);padding:56px;text-align:center;color:var(--ink);box-shadow:var(--shadow)}
@@ -476,23 +474,12 @@ footer a:hover{color:var(--gold-lt)}
     <div class="sec-head center">
       <span class="eyebrow light">Viver bem, todos os dias</span>
       <h2>Lazer completo, padrão Cury</h2>
-      <p>Áreas de convívio para a família aproveitar sem sair de casa.</p>
+      <p>Um lazer completo, pensado para a família aproveitar o dia a dia sem sair de casa — com áreas de convívio, esporte e descanso.</p>
     </div>
-    <div class="lazer-grid">
-      <div class="lz"><div class="ic">🏊</div><b>Piscina</b></div>
-      <div class="lz"><div class="ic">🏋️</div><b>Fitness</b></div>
-      <div class="lz"><div class="ic">🏀</div><b>Quadra</b></div>
-      <div class="lz"><div class="ic">🎉</div><b>Salão de festas</b></div>
-      <div class="lz"><div class="ic">🧒</div><b>Playground</b></div>
-      <div class="lz"><div class="ic">🧸</div><b>Brinquedoteca</b></div>
-      <div class="lz"><div class="ic">🎮</div><b>Sala de jogos</b></div>
-      <div class="lz"><div class="ic">🧺</div><b>Lavanderia</b></div>
-      <div class="lz"><div class="ic">🔥</div><b>Churrasqueira</b></div>
-      <div class="lz"><div class="ic">🐾</div><b>Pet place</b></div>
-      <div class="lz"><div class="ic">💻</div><b>Coworking</b></div>
-      <div class="lz"><div class="ic">🛝</div><b>Espaço kids</b></div>
+    <div class="lazer-chips">
+      <span>Piscina</span><span>Fitness</span><span>Quadra</span><span>Salão de festas</span><span>Playground</span><span>Brinquedoteca</span><span>Sala de jogos</span><span>Lavanderia</span><span>Churrasqueira</span><span>Pet place</span><span>Coworking</span><span>Espaço kids</span>
     </div>
-    <p style="text-align:center;margin-top:22px;color:rgba(247,240,226,.6);font-size:.8rem">Itens de lazer sujeitos a confirmação no memorial descritivo do lançamento. Imagens e itens meramente ilustrativos.</p>
+    <p style="text-align:center;margin-top:24px;color:rgba(247,240,226,.6);font-size:.8rem">Itens de lazer preliminares, sujeitos a confirmação no memorial descritivo do lançamento.</p>
   </div>
 </section>
 
