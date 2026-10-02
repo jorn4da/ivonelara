@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Residencial Dona Ivone Lara | 1 e 2 quartos com varanda ao lado do Rio Wonder | Cury</title>
-<meta name="description" content="Residencial Dona Ivone Lara, lançamento Cury ao lado do Rio Wonder, a passos da Praça Onze, o berço do samba. 1 e 2 quartos com varanda a partir de R$ 309 mil, lazer completo com piscina. Meeting de lançamento 15/10 às 16h." />
-<meta property="og:title" content="Residencial Dona Ivone Lara | Morar no berço do samba" />
-<meta property="og:description" content="1 e 2 quartos com varanda a partir de R$ 309 mil, ao lado do Rio Wonder, Zona Portuária. Um lançamento Cury. Meeting 15/10 às 16h com samba ao vivo." />
+<title>Residencial Ivone Lara — 2 quartos ao lado do Rio Wonder | Cury</title>
+<meta name="description" content="Residencial Ivone Lara, um lançamento Cury ao lado do Rio Wonder, a passos da Praça Onze — o berço do samba. Apartamentos de 2 quartos a partir de R$ 360 mil. Saia do aluguel. Lançamento 01 de outubro." />
+<meta property="og:title" content="Residencial Ivone Lara — morar no berço do samba" />
+<meta property="og:description" content="2 quartos a partir de R$ 360 mil, ao lado do Rio Wonder, Zona Portuária/Cidade Nova. Um lançamento Cury. Lançamento 01/10." />
 <meta property="og:image" content="assets/img/local-street.jpg" />
 <meta property="og:type" content="website" />
 <link rel="icon" href="assets/favicon.ico" />
@@ -179,28 +179,6 @@ header.scrolled{background:rgba(62,62,44,.96);backdrop-filter:blur(10px);padding
 .tipo .side .big{font-family:'Playfair Display',serif;font-weight:900;font-size:3.4rem;line-height:.95;color:var(--gold-lt)}
 .tipo .side p{color:rgba(243,238,227,.85);margin-top:12px}
 
-/* Tipologias (1Q / 2Q) */
-.tipos{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:900px;margin:0 auto}
-.tcard{position:relative;background:#fff;border-radius:var(--radius-lg);padding:38px 34px;box-shadow:var(--shadow);border:1px solid var(--line);display:flex;flex-direction:column}
-.tcard.destaque{border:2px solid var(--gold)}
-.tcard .tag-top{position:absolute;top:-13px;left:34px;background:var(--magenta);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
-.tcard .kick{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);font-weight:700}
-.tcard h3{font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--green);margin:4px 0 8px}
-.tcard .price{font-family:'Playfair Display',serif;color:var(--taupe);font-size:1.05rem}
-.tcard .price b{display:block;font-size:2.5rem;color:var(--ink);font-weight:900;line-height:1.1}
-.tcard .aval{display:inline-block;margin-top:10px;background:rgba(138,74,59,.1);color:var(--magenta);font-size:.82rem;font-weight:600;padding:6px 12px;border-radius:8px}
-.tcard .aval b{font-weight:800}
-.tcard ul{list-style:none;margin:18px 0 24px;flex:1}
-.tcard li{display:flex;gap:10px;align-items:center;padding:5px 0;color:var(--ink);font-size:.96rem}
-.tcard li .c{color:var(--green-lt);font-weight:800}
-.ficha{display:grid;grid-template-columns:repeat(4,1fr);max-width:900px;margin:34px auto 0;background:var(--green);border-radius:var(--radius-lg);overflow:hidden}
-.ficha div{padding:22px 16px;text-align:center;border-right:1px solid rgba(243,238,227,.14)}
-.ficha div:last-child{border-right:none}
-.ficha b{display:block;font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--gold-lt);line-height:1.1}
-.ficha span{font-size:.78rem;color:rgba(243,238,227,.82)}
-.tnote{max-width:900px;margin:18px auto 0;text-align:center;font-size:.74rem;color:var(--taupe)}
-@media(max-width:760px){.tipos{grid-template-columns:1fr}.ficha{grid-template-columns:1fr 1fr}.ficha div:nth-child(2){border-right:none}.ficha div:nth-child(-n+2){border-bottom:1px solid rgba(243,238,227,.14)}}
-
 /* Localização */
 .loc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
 .loc-photo{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);margin-bottom:20px}
@@ -296,7 +274,7 @@ footer a:hover{color:var(--gold-lt)}
     <div class="brand">
       <img src="assets/logo-cury.png" alt="Cury" />
       <span class="sep"></span>
-      <span class="emp">Dona Ivone Lara<small>Residencial · Cury</small></span>
+      <span class="emp">Ivone Lara<small>Residencial · Cury</small></span>
     </div>
     <nav class="nav-links">
       <a href="#homenagem">A homenagem</a>
@@ -320,19 +298,19 @@ footer a:hover{color:var(--gold-lt)}
   </div>
   <div class="container">
     <div class="hero-copy">
-      <span class="hero-badge"><span class="dot"></span> Cury · Meeting de Lançamento · 15/10 às 16h</span>
-      <h1>Residencial<br />Dona Ivone Lara</h1>
+      <span class="hero-badge"><span class="dot"></span> Cury · Meeting de Lançamento · 01/10</span>
+      <h1>Residencial<br />Ivone Lara</h1>
       <div class="tag">Seu apartamento no berço do samba.</div>
-      <p class="sub">Um lançamento Cury ao lado do Rio Wonder, a passos da Praça Onze — onde o samba nasceu. Apartamentos de 1 e 2 quartos, todos com varanda, para você sair do aluguel e morar num endereço que celebra uma lenda.</p>
+      <p class="sub">Um lançamento Cury ao lado do Rio Wonder, a passos da Praça Onze — onde o samba nasceu. Apartamentos de 2 quartos para você sair do aluguel e morar num endereço que celebra uma lenda.</p>
       <div class="facts">
-        <div class="f"><b>1 e 2 quartos</b><span>todos com varanda</span></div>
-        <div class="f"><b>R$ 309 mil</b><span>a partir de</span></div>
+        <div class="f"><b>2 quartos</b><span>com conforto</span></div>
+        <div class="f"><b>R$ 360 mil</b><span>a partir de</span></div>
         <div class="f"><b>Rio Wonder</b><span>ao lado</span></div>
       </div>
     </div>
     <div class="lead-card" id="form">
       <div id="form-inner">
-        <span class="lc-eyebrow">Meeting de Lançamento · 15 de Outubro, 16h</span>
+        <span class="lc-eyebrow">Meeting de Lançamento · 01 de Outubro</span>
         <h3>Seja prioridade no lançamento</h3>
         <p class="lc-sub">Cadastre-se e fale agora com um especialista. Receba tudo em primeira mão e escolha a melhor unidade.</p>
         <form id="leadForm" onsubmit="return enviarLead(event)">
@@ -372,10 +350,10 @@ footer a:hover{color:var(--gold-lt)}
 <!-- STATS -->
 <div class="statsbar">
   <div class="container">
-    <div class="stat"><b>1 e 2 quartos</b><span>todos com varanda</span></div>
-    <div class="stat"><b>R$ 309 mil</b><span>a partir de · avaliação R$ 360 mil</span></div>
+    <div class="stat"><b>2 quartos</b><span>tipologia do lançamento</span></div>
+    <div class="stat"><b>R$ 360 mil</b><span>a partir de</span></div>
     <div class="stat"><b>Zona Portuária</b><span>Santo Cristo · berço do samba</span></div>
-    <div class="stat"><b>18 andares</b><span>lazer com piscina no térreo</span></div>
+    <div class="stat"><b>+60 anos</b><span>de Cury</span></div>
   </div>
 </div>
 
@@ -418,10 +396,10 @@ footer a:hover{color:var(--gold-lt)}
         </ul>
       </div>
       <div class="col col-good">
-        <h3>Conquistar o seu no Dona Ivone Lara</h3>
+        <h3>Conquistar o seu no Ivone Lara</h3>
         <ul>
           <li><span class="ic">✓</span> Parcela que constrói o SEU patrimônio</li>
-          <li><span class="ic">✓</span> 1 ou 2 quartos com varanda e lazer com piscina</li>
+          <li><span class="ic">✓</span> 2 quartos novo, com lazer completo</li>
           <li><span class="ic">✓</span> Entrada facilitada e subsídio do governo</li>
           <li><span class="ic">✓</span> A liberdade de morar no que é seu</li>
         </ul>
@@ -434,44 +412,28 @@ footer a:hover{color:var(--gold-lt)}
 <section class="section cream2" id="apartamento">
   <div class="container">
     <div class="sec-head center">
-      <span class="eyebrow">Os apartamentos</span>
-      <h2>1 ou 2 quartos, todos com varanda</h2>
-      <p>Preço de lançamento abaixo do valor de avaliação, com entrada facilitada e subsídio do programa habitacional.</p>
+      <span class="eyebrow">O apartamento</span>
+      <h2>2 quartos para chamar de seu</h2>
+      <p>Preço de lançamento, com condições facilitadas e subsídio do programa habitacional.</p>
     </div>
-    <div class="tipos">
-      <article class="tcard">
-        <span class="kick">Tipologia · 32 m²</span>
-        <h3>1 Quarto</h3>
-        <div class="price">a partir de<b>R$ 309.000</b></div>
-        <div class="aval">Avaliação estimada <b>R$ 360.000</b></div>
-        <ul>
-          <li><span class="c">✓</span> Varanda</li>
-          <li><span class="c">✓</span> Ideal para o primeiro imóvel ou para investir</li>
-          <li><span class="c">✓</span> Entrada facilitada e subsídio do governo</li>
-        </ul>
-        <a href="#" class="btn btn-green btn-block" data-wpp data-origem="Tipologia 1 quarto">Simular o 1 quarto</a>
-      </article>
-      <article class="tcard destaque">
-        <span class="tag-top">Mais procurado</span>
-        <span class="kick">Tipologia · 36 m²</span>
+    <div class="tipo">
+      <div class="body">
+        <span class="kick">Tipologia do lançamento</span>
         <h3>2 Quartos</h3>
-        <div class="price">a partir de<b>R$ 349.000</b></div>
-        <div class="aval">Avaliação estimada <b>R$ 400.000</b></div>
+        <div class="price">a partir de<b>R$ 360.000</b></div>
         <ul>
-          <li><span class="c">✓</span> Varanda</li>
-          <li><span class="c">✓</span> Espaço para a família crescer</li>
-          <li><span class="c">✓</span> Entrada facilitada e subsídio do governo</li>
+          <li><span class="c">✓</span> Entrada facilitada e parcelada</li>
+          <li><span class="c">✓</span> Subsídio do programa habitacional</li>
+          <li><span class="c">✓</span> Financiamento pela Caixa</li>
+          <li><span class="c">✓</span> Documentação orientada do início ao fim</li>
         </ul>
-        <a href="#" class="btn btn-gold btn-block" data-wpp data-origem="Tipologia 2 quartos">Simular o 2 quartos</a>
-      </article>
+        <a href="#" class="btn btn-green" data-wpp data-origem="Tipologia 2 quartos">Simular meu financiamento</a>
+      </div>
+      <div class="side">
+        <div class="big">Saia do aluguel<br />em 2026</div>
+        <p>Com renda a partir de R$ 5 mil, o seu nome pode estar na porta. Fale com um especialista e descubra em minutos o quanto você precisa.</p>
+      </div>
     </div>
-    <div class="ficha">
-      <div><b>+6.000 m²</b><span>de terreno</span></div>
-      <div><b>1 bloco</b><span>térreo + 18 pavimentos</span></div>
-      <div><b>100%</b><span>das unidades com varanda</span></div>
-      <div><b>Piscina</b><span>lazer completo no térreo</span></div>
-    </div>
-    <p class="tnote">Expectativa de preços e de valores de avaliação informada pela Cury Vendas, sujeita a alteração e à tabela oficial do lançamento. Avaliação depende da análise da instituição financeira.</p>
   </div>
 </section>
 
@@ -506,8 +468,8 @@ footer a:hover{color:var(--gold-lt)}
   <div class="container">
     <div class="sec-head center">
       <span class="eyebrow light">Viver bem, todos os dias</span>
-      <h2>Lazer completo no térreo, com piscina</h2>
-      <p>Um bloco único de 18 pavimentos sobre um terreno de mais de 6.000 m², com o lazer inteiro no térreo para a família aproveitar o dia a dia sem sair de casa.</p>
+      <h2>Lazer completo, padrão Cury</h2>
+      <p>Um lazer completo, pensado para a família aproveitar o dia a dia sem sair de casa — com áreas de convívio, esporte e descanso.</p>
     </div>
     <div class="lazer-chips">
       <span>Piscina</span><span>Fitness</span><span>Quadra</span><span>Salão de festas</span><span>Playground</span><span>Brinquedoteca</span><span>Sala de jogos</span><span>Lavanderia</span><span>Churrasqueira</span><span>Pet place</span><span>Coworking</span><span>Espaço kids</span>
@@ -520,9 +482,9 @@ footer a:hover{color:var(--gold-lt)}
 <section class="section cream2">
   <div class="container">
     <div class="oferta">
-      <span class="prazo">⟡ Meeting de Lançamento · 15/10 às 16h, com samba ao vivo · espelho de vendas aberto na hora</span>
+      <span class="prazo">⟡ Meeting de Lançamento · 01 de Outubro — vagas de prioridade limitadas</span>
       <h2>Seja prioridade e escolha a melhor unidade</h2>
-      <p>No dia 15/10 o espelho de vendas abre na hora, e as melhores unidades vão para quem chega primeiro. Cadastre-se agora para entrar na lista de prioridade e escolher a sua no próprio lançamento.</p>
+      <p>As melhores unidades e as condições de lançamento são para quem chega primeiro. Cadastre-se agora e saia na frente antes da abertura oficial de vendas.</p>
       <div class="benes">
         <span>✓ Entrada facilitada</span>
         <span>✓ Subsídio do governo</span>
@@ -556,7 +518,7 @@ footer a:hover{color:var(--gold-lt)}
       </details>
       <details>
         <summary>Quando é o Meeting de Lançamento?</summary>
-        <p>O Meeting de Lançamento é no dia 15 de outubro, às 16h, no Porto, com samba ao vivo. O espelho de vendas abre na hora: quem está na lista de prioridade recebe tudo em primeira mão e escolhe a melhor unidade no próprio dia.</p>
+        <p>O Meeting de Lançamento está marcado para 01 de outubro. Quem se cadastra antes se torna prioridade: recebe as informações em primeira mão e escolhe a melhor unidade no dia.</p>
       </details>
       <details>
         <summary>Preciso de entrada?</summary>
@@ -611,8 +573,8 @@ footer a:hover{color:var(--gold-lt)}
       </div>
     </div>
     <div class="legal">
-      <p>Realização e construção: Cury Construtora e Incorporadora. Central de Vendas Cury — CRECI 23.670-J. Valores de expectativa de preço e de avaliação sujeitos a alteração e à tabela oficial do lançamento. O nome "Dona Ivone Lara" é uma homenagem cultural à sambista Dona Ivone Lara. As imagens são meramente ilustrativas; o empreendimento ainda não teve perspectivas do projeto divulgadas. Tipologia, valores e itens de lazer são preliminares de lançamento e sujeitos a confirmação e disponibilidade; consulte o corretor e o memorial descritivo. Consulte o valor exato do benefício que a sua renda dispõe. Página de divulgação de corretor autorizado.</p>
-      <p style="margin-top:12px">© 2026 · Residencial Dona Ivone Lara. Marcas e logotipos pertencem à Cury Construtora e Incorporadora S.A.</p>
+      <p>Realização e construção: Cury Construtora e Incorporadora. Central de Vendas Cury — CRECI 23.670-J. O nome "Ivone Lara" é uma homenagem cultural à sambista Dona Ivone Lara. As imagens são meramente ilustrativas; o empreendimento ainda não teve perspectivas do projeto divulgadas. Tipologia, valores e itens de lazer são preliminares de lançamento e sujeitos a confirmação e disponibilidade; consulte o corretor e o memorial descritivo. Consulte o valor exato do benefício que a sua renda dispõe. Página de divulgação de corretor autorizado.</p>
+      <p style="margin-top:12px">© 2026 · Residencial Ivone Lara. Marcas e logotipos pertencem à Cury Construtora e Incorporadora S.A.</p>
     </div>
   </div>
 </footer>
@@ -673,7 +635,7 @@ var LEAD_CC='aritan.rj@curyvendas.com.br';
 var SHEET_WEBHOOK='https://script.google.com/macros/s/AKfycbyeCg1rfo85NcgTM15vE2dLzhPqomi23nAiLItM63QqhwqTC5CAmoihL2J713Dqx-nB/exec';
 
 function wppLink(origem,extra){
-  var msg='Olá! Vi a página do *'+EMP+'* e quero saber mais sobre os apartamentos de 1 e 2 quartos.';
+  var msg='Olá! Vi a página do *'+EMP+'* e quero saber mais sobre os apartamentos de 2 quartos.';
   if(extra) msg+=' '+extra;
   msg+=' (Origem: '+(origem||'Página')+')';
   return 'https://wa.me/'+WPP_NUMBER+'?text='+encodeURIComponent(msg);
@@ -723,7 +685,7 @@ function enviarLead(e){
   if(window.gtag) gtag('event','generate_lead',{origem:'Formulário Hero'});
   if(window.dataLayer) dataLayer.push({event:'generate_lead',form_origin:'hero'});
   var agora=new Date().toLocaleString('pt-BR');
-  postLead({_subject:'Novo lead Ivone Lara: '+nome, Nome:nome, WhatsApp:whats, Operadora:operadora(whats)||'não identificada', Renda:renda, Interesse:'1 e 2 quartos', Empreendimento:EMP, 'Recebido em':agora, Origem:location.href});
+  postLead({_subject:'Novo lead Ivone Lara: '+nome, Nome:nome, WhatsApp:whats, Operadora:operadora(whats)||'não identificada', Renda:renda, Interesse:'2 quartos', Empreendimento:EMP, 'Recebido em':agora, Origem:location.href});
   var msg='Olá! Vi a página do *'+EMP+'* e quero as condições. Meu nome é *'+nome+'*, WhatsApp '+whats+' e minha renda é '+renda+'.';
   var link='https://wa.me/'+WPP_NUMBER+'?text='+encodeURIComponent(msg);
   var inner=document.getElementById('form-inner'), okBox=document.getElementById('form-ok');
