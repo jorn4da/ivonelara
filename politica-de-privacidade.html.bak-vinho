@@ -20,7 +20,7 @@ fbq('init', '1902592370422998');fbq('track', 'PageView');
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
-:root{--green:#5C5C42;--green-2:#3E3E2C;--gold:#C9A04B;--gold-dark:#9C7A30;--cream:#F3EEE3;--ink:#2A2219;--taupe:#6B6552;--line:rgba(23,19,15,.14)}
+:root{--green:#14432E;--green-2:#0E3322;--gold:#D9A441;--gold-dark:#B9862B;--cream:#F7F0E2;--ink:#17130F;--taupe:#6B6357;--line:rgba(23,19,15,.14)}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;line-height:1.7}
 h1,h2{font-family:'Playfair Display',serif;font-weight:800}
@@ -33,14 +33,14 @@ header{background:var(--green);padding:16px 0}
 .hn a{color:var(--gold);font-size:.9rem;font-weight:600}
 .hero{background:var(--green-2);color:var(--cream);padding:50px 0}
 .hero h1{font-size:2.3rem;color:#fff;margin-bottom:8px}
-.hero p{color:rgba(243,238,227,.8);font-size:.95rem}
+.hero p{color:rgba(247,240,226,.8);font-size:.95rem}
 main{padding:48px 0 64px}
 main h2{font-size:1.4rem;color:var(--green);margin:28px 0 10px}
-main p{margin-bottom:12px;color:#3A3428}
-main ul{margin:0 0 14px 22px}main li{margin-bottom:7px;color:#3A3428}
+main p{margin-bottom:12px;color:#39332B}
+main ul{margin:0 0 14px 22px}main li{margin-bottom:7px;color:#39332B}
 .box{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin:22px 0}
 .back{display:inline-block;margin-top:28px;background:var(--gold);color:var(--ink);font-weight:700;padding:14px 28px;border-radius:8px}
-footer{background:var(--ink);color:rgba(243,238,227,.6);padding:24px 0;font-size:.8rem;text-align:center}
+footer{background:var(--ink);color:rgba(247,240,226,.6);padding:24px 0;font-size:.8rem;text-align:center}
 </style>
 </head>
 <body>
