@@ -7,7 +7,7 @@
 <meta name="description" content="Residencial Dona Ivone Lara, lançamento Cury ao lado do Rio Wonder, a passos da Praça Onze, o berço do samba. 1 e 2 quartos com varanda a partir de R$ 309 mil, lazer completo com piscina. Meeting de lançamento 15/10 às 16h." />
 <meta property="og:title" content="Residencial Dona Ivone Lara | Morar no berço do samba" />
 <meta property="og:description" content="1 e 2 quartos com varanda a partir de R$ 309 mil, ao lado do Rio Wonder, Zona Portuária. Um lançamento Cury. Meeting 15/10 às 16h com samba ao vivo." />
-<meta property="og:image" content="assets/img/ivone-lara-og.jpg" />
+<meta property="og:image" content="assets/img/local-street.jpg" />
 <meta property="og:type" content="website" />
 <link rel="icon" href="assets/favicon.ico" />
 <link rel="apple-touch-icon" href="assets/favicon-180.png" />
@@ -217,14 +217,6 @@ header.scrolled{background:rgba(62,62,44,.96);backdrop-filter:blur(10px);padding
 .lazer-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:840px;margin:0 auto}
 .lazer-chips span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;padding:11px 20px;border-radius:999px;font-size:.96rem;font-weight:500}
 
-.il-gal{display:grid;grid-template-columns:1.55fr 1fr;gap:16px;max-width:1080px;margin:36px auto 0}
-.il-gal figure,.il-fachada{position:relative;margin:0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow)}
-.il-gal img,.il-fachada img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
-.il-fachada{max-width:1080px;margin:0 auto 44px}
-.il-fachada img{aspect-ratio:auto}
-.il-gal figcaption,.il-fachada figcaption{position:absolute;left:14px;bottom:14px;background:rgba(42,34,25,.72);color:#F3EEE3;font-size:.78rem;letter-spacing:.04em;padding:6px 12px;border-radius:999px}
-@media(max-width:760px){.il-gal{grid-template-columns:1fr}.lazer-chips{gap:8px}.lazer-chips span{padding:8px 14px;font-size:.86rem}}
-
 /* Oferta */
 .oferta{background:linear-gradient(160deg,var(--gold) 0%,var(--gold-dark) 100%);border-radius:var(--radius-lg);padding:56px;text-align:center;color:var(--ink);box-shadow:var(--shadow)}
 .oferta .prazo{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--gold-lt);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;padding:8px 18px;border-radius:999px;margin-bottom:20px}
@@ -383,7 +375,7 @@ footer a:hover{color:var(--gold-lt)}
     <div class="stat"><b>1 e 2 quartos</b><span>todos com varanda</span></div>
     <div class="stat"><b>R$ 309 mil</b><span>a partir de · avaliação R$ 360 mil</span></div>
     <div class="stat"><b>Zona Portuária</b><span>Santo Cristo · berço do samba</span></div>
-    <div class="stat"><b>650 unidades</b><span>térreo + 19 pavimentos · 22 itens de lazer</span></div>
+    <div class="stat"><b>18 andares</b><span>lazer com piscina no térreo</span></div>
   </div>
 </div>
 
@@ -441,7 +433,6 @@ footer a:hover{color:var(--gold-lt)}
 <!-- APARTAMENTO / TIPOLOGIA -->
 <section class="section cream2" id="apartamento">
   <div class="container">
-    <figure class="il-fachada"><img src="assets/img/ivone-lara-fachada.jpg" alt="Fachada e portaria do Residencial Dona Ivone Lara" loading="lazy" width="1600" height="753" /><figcaption>Fachada e portaria · perspectiva ilustrada</figcaption></figure>
     <div class="sec-head center">
       <span class="eyebrow">Os apartamentos</span>
       <h2>1 ou 2 quartos, todos com varanda</h2>
@@ -475,10 +466,10 @@ footer a:hover{color:var(--gold-lt)}
       </article>
     </div>
     <div class="ficha">
-      <div><b>6.185 m²</b><span>de terreno (6.185,75 m²)</span></div>
-      <div><b>Térreo + 19</b><span>pavimentos</span></div>
-      <div><b>216</b><span>unidades de 1 quarto com varanda</span></div>
-      <div><b>434</b><span>unidades de 2 quartos com varanda</span></div>
+      <div><b>+6.000 m²</b><span>de terreno</span></div>
+      <div><b>1 bloco</b><span>térreo + 18 pavimentos</span></div>
+      <div><b>100%</b><span>das unidades com varanda</span></div>
+      <div><b>Piscina</b><span>lazer completo no térreo</span></div>
     </div>
     <p class="tnote">Expectativa de preços e de valores de avaliação informada pela Cury Vendas, sujeita a alteração e à tabela oficial do lançamento. Avaliação depende da análise da instituição financeira.</p>
   </div>
@@ -515,17 +506,13 @@ footer a:hover{color:var(--gold-lt)}
   <div class="container">
     <div class="sec-head center">
       <span class="eyebrow light">Viver bem, todos os dias</span>
-      <h2>22 itens de lazer, com piscina adulto e infantil</h2>
-      <p>São 650 apartamentos em térreo + 19 pavimentos sobre um terreno de 6.185 m², com lazer de clube para a família aproveitar o dia a dia sem sair de casa.</p>
+      <h2>Lazer completo no térreo, com piscina</h2>
+      <p>Um bloco único de 18 pavimentos sobre um terreno de mais de 6.000 m², com o lazer inteiro no térreo para a família aproveitar o dia a dia sem sair de casa.</p>
     </div>
     <div class="lazer-chips">
-      <span>Piscina adulto e infantil</span><span>Beach tênis</span><span>Quadra poliesportiva</span><span>Fitness</span><span>Salão de festas</span><span>Churrasqueiras</span><span>Sport bar</span><span>Espaço beer</span><span>Espaço zen</span><span>Coworking</span><span>Mercadinho</span><span>Delivery</span><span>Lavanderia</span><span>Brinquedoteca</span><span>Play kids</span><span>Sala game</span><span>Jogos</span><span>Praça de jogos</span><span>Pet place</span><span>Pet care</span><span>Bicicletário</span><span>Bicicletário elétrico</span>
+      <span>Piscina</span><span>Fitness</span><span>Quadra</span><span>Salão de festas</span><span>Playground</span><span>Brinquedoteca</span><span>Sala de jogos</span><span>Lavanderia</span><span>Churrasqueira</span><span>Pet place</span><span>Coworking</span><span>Espaço kids</span>
     </div>
-    <div class="il-gal">
-      <figure class="il-wide"><img src="assets/img/ivone-lara-piscina.jpg" alt="Piscina adulto e infantil do Residencial Dona Ivone Lara, vista aérea" loading="lazy" width="1600" height="1036" /><figcaption>Piscina adulto e infantil</figcaption></figure>
-      <figure><img src="assets/img/ivone-lara-bicicletario.jpg" alt="Bicicletário elétrico do Residencial Dona Ivone Lara" loading="lazy" width="1600" height="1036" /><figcaption>Bicicletário elétrico</figcaption></figure>
-    </div>
-    <p style="text-align:center;margin-top:24px;color:rgba(243,238,227,.6);font-size:.8rem">Perspectivas ilustradas do material oficial de lançamento. Itens de lazer conforme ficha técnica da Cury, sujeitos ao memorial descritivo.</p>
+    <p style="text-align:center;margin-top:24px;color:rgba(243,238,227,.6);font-size:.8rem">Itens de lazer preliminares, sujeitos a confirmação no memorial descritivo do lançamento.</p>
   </div>
 </section>
 
@@ -624,7 +611,7 @@ footer a:hover{color:var(--gold-lt)}
       </div>
     </div>
     <div class="legal">
-      <p>Realização e construção: Cury Construtora e Incorporadora. Central de Vendas Cury — CRECI 23.670-J. Valores de expectativa de preço e de avaliação sujeitos a alteração e à tabela oficial do lançamento. O nome "Dona Ivone Lara" é uma homenagem cultural à sambista Dona Ivone Lara. As imagens e perspectivas são meramente ilustrativas. Tipologia, valores e itens de lazer são preliminares de lançamento e sujeitos a confirmação e disponibilidade; consulte o corretor e o memorial descritivo. Consulte o valor exato do benefício que a sua renda dispõe. Página de divulgação de corretor autorizado.</p>
+      <p>Realização e construção: Cury Construtora e Incorporadora. Central de Vendas Cury — CRECI 23.670-J. Valores de expectativa de preço e de avaliação sujeitos a alteração e à tabela oficial do lançamento. O nome "Dona Ivone Lara" é uma homenagem cultural à sambista Dona Ivone Lara. As imagens são meramente ilustrativas; o empreendimento ainda não teve perspectivas do projeto divulgadas. Tipologia, valores e itens de lazer são preliminares de lançamento e sujeitos a confirmação e disponibilidade; consulte o corretor e o memorial descritivo. Consulte o valor exato do benefício que a sua renda dispõe. Página de divulgação de corretor autorizado.</p>
       <p style="margin-top:12px">© 2026 · Residencial Dona Ivone Lara. Marcas e logotipos pertencem à Cury Construtora e Incorporadora S.A.</p>
     </div>
   </div>
