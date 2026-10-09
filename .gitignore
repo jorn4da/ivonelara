@@ -1,3 +1,5 @@
 .DS_Store
 *.command
 *.bak*
+_cmp-*
+assets/video/hero-loop.mp4

@@ -323,7 +323,7 @@ footer a:hover{color:var(--gold-lt)}
 <section class="hero">
   <div class="hero-bg">
     <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
-      <source src="assets/video/hero-web.mp4" type="video/mp4" />
+      <source src="assets/video/hero-loop-v2.mp4" type="video/mp4" />
     </video>
   </div>
   <div class="container">
@@ -668,14 +668,23 @@ footer a:hover{color:var(--gold-lt)}
 var head=document.getElementById('head');
 window.addEventListener('scroll',function(){ if(window.scrollY>60) head.classList.add('scrolled'); else head.classList.remove('scrolled'); });
 
-// Vídeo do topo em loop contínuo (reforço p/ não travar em qualquer navegador)
+// Vídeo do topo em loop contínuo (arquivo com emenda suave fim→início + reforços p/ iPhone/Android)
 (function(){
   var hv=document.getElementById('heroVideo'); if(!hv) return;
-  hv.loop=true; hv.muted=true;
-  hv.addEventListener('ended',function(){ this.currentTime=0; this.play().catch(function(){}); });
-  function fp(){ hv.play().catch(function(){}); }
+  hv.loop=true; hv.muted=true; hv.defaultMuted=true; hv.playsInline=true;
+  hv.setAttribute('muted',''); hv.setAttribute('playsinline',''); hv.setAttribute('webkit-playsinline','');
+  function fp(){ if(hv.paused){ var p=hv.play(); if(p&&p.catch) p.catch(function(){}); } }
+  // se algum navegador ignorar o loop, volta ao início antes de acabar
+  hv.addEventListener('timeupdate',function(){ if(hv.duration && hv.currentTime>hv.duration-0.12){ hv.currentTime=0; fp(); } });
+  hv.addEventListener('ended',function(){ hv.currentTime=0; fp(); });
+  // se pausar sozinho (aba voltou, economia de bateria, etc.), retoma
+  hv.addEventListener('pause',function(){ setTimeout(fp,300); });
   hv.addEventListener('canplay',fp);
   document.addEventListener('visibilitychange',function(){ if(!document.hidden) fp(); });
+  window.addEventListener('pageshow',fp);
+  // iPhone em modo economia bloqueia autoplay: inicia no primeiro toque/rolagem
+  ['touchstart','scroll','click'].forEach(function(ev){ window.addEventListener(ev,fp,{passive:true,once:true}); });
+  if('IntersectionObserver' in window){ new IntersectionObserver(function(e){ if(e[0].isIntersecting) fp(); }).observe(hv); }
   fp();
 })();
 
