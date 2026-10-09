@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cadastro recebido | Residencial Dona Ivone Lara | Cury</title>
+<meta name="robots" content="noindex, nofollow" />
+<meta name="description" content="Cadastro recebido. Em instantes um especialista Cury fala com você no WhatsApp." />
+<link rel="icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" href="assets/favicon-180.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script>
+/* ============ CONFIGURAÇÃO DA PÁGINA DE OBRIGADO (padrão) ============
+   Para reaproveitar em outra LP, troque só este bloco. */
+var TY = {
+  empreendimento: 'Residencial Ivone Lara (ao lado Rio Wonder)',
+  whatsapp: '5521959434519',
+  pixel: '1902592370422998',
+  ga4: 'G-0LHY05WGV6',
+  segundosParaWhats: 4
+};
+/* Lê o lead que a LP deixou na sessão (nada de nome/telefone na URL) */
+var LEAD = null;
+try { LEAD = JSON.parse(sessionStorage.getItem('ty_lead') || 'null'); } catch(e) {}
+var ORIGEM = (LEAD && LEAD.origem) || (new URLSearchParams(location.search).get('origem')) || 'direto';
+var JA_CONTOU = false;
+try { JA_CONTOU = !!(LEAD && sessionStorage.getItem('ty_done_' + LEAD.id)); } catch(e) {}
+var CONTAR_LEAD = !!LEAD && !JA_CONTOU;
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', TY.pixel);
+fbq('track', 'PageView');
+if (CONTAR_LEAD) {
+  fbq('track', 'Lead', { content_name: TY.empreendimento, content_category: ORIGEM }, { eventID: LEAD.id });
+}
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1902592370422998&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LHY05WGV6"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config',TY.ga4);
+if (CONTAR_LEAD) {
+  gtag('event','generate_lead',{origem:ORIGEM, empreendimento:TY.empreendimento, page_type:'obrigado'});
+  dataLayer.push({event:'lead_obrigado', origem:ORIGEM});
+  try { sessionStorage.setItem('ty_done_' + LEAD.id, '1'); } catch(e) {}
+}
+</script>
+<!-- End Google Analytics 4 -->
+
+<style>
+:root{
+  --green:#5C5C42; --green-2:#3E3E2C; --green-lt:#828162;
+  --gold:#C9A04B; --gold-dark:#9C7A30; --gold-lt:#EBD49A;
+  --terra:#8A4A3B; --cream:#F3EEE3; --cream-2:#EAE4D4; --ink:#2A2219; --taupe:#6B6552;
+  --line:rgba(42,34,25,.14); --wa:#25D366; --radius:10px; --radius-lg:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.samba-bar{height:6px;background:repeating-linear-gradient(135deg,var(--gold) 0 12px,var(--terra) 12px 24px,var(--green) 24px 36px)}
+.top{background:var(--green-2);padding:16px 0}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand img{height:24px;filter:brightness(0) invert(1)}
+.brand .sep{width:1px;height:24px;background:rgba(255,255,255,.3)}
+.brand b{font-family:'Playfair Display',serif;font-size:1.05rem}
+main{flex:1;padding:48px 0 64px}
+.card{background:#fff;border-radius:var(--radius-lg);box-shadow:0 20px 55px rgba(62,62,44,.16);padding:44px 36px;text-align:center;border-top:5px solid var(--gold)}
+.check{width:72px;height:72px;border-radius:50%;background:var(--green);display:grid;place-items:center;margin:0 auto 22px;animation:pop .5s ease-out}
+.check svg{width:36px;height:36px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+@keyframes pop{0%{transform:scale(.4);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+.eyebrow{font-weight:700;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-dark)}
+h1{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,4.6vw,2.4rem);line-height:1.15;margin:10px 0 14px;color:var(--green-2)}
+.lead{color:var(--taupe);font-size:1.02rem;max-width:520px;margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;padding:17px 30px;border-radius:var(--radius);border:none;cursor:pointer;transition:.2s;width:100%;max-width:420px}
+.btn-wpp{background:var(--wa);color:#fff;margin-top:28px;box-shadow:0 10px 26px rgba(37,211,102,.35)}
+.btn-wpp:hover{background:#1EBE5A;transform:translateY(-2px)}
+.btn-wpp svg{width:22px;height:22px;fill:#fff}
+.timer{font-size:.86rem;color:var(--taupe);margin-top:12px;min-height:1.3em}
+.timer b{color:var(--green-2)}
+.steps{margin-top:36px;display:grid;gap:14px}
+.step{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px}
+.step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:800;display:grid;place-items:center;font-family:'Playfair Display',serif}
+.step h3{font-size:1rem;color:var(--green-2);margin-bottom:2px}
+.step p{font-size:.92rem;color:var(--taupe)}
+.sec-title{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--green-2);margin:44px 0 6px}
+.sec-sub{color:var(--taupe);font-size:.93rem}
+.docs{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.docs li{background:var(--cream-2);border-radius:var(--radius);padding:12px 14px;font-size:.9rem;display:flex;gap:10px;align-items:center}
+.docs li::before{content:'';flex:0 0 8px;height:8px;border-radius:50%;background:var(--terra)}
+.event{margin-top:36px;background:var(--green-2);color:#fff;border-radius:var(--radius-lg);padding:28px 26px;display:flex;gap:20px;align-items:center}
+.event .date{flex:0 0 auto;text-align:center;background:var(--gold);color:var(--ink);border-radius:var(--radius);padding:10px 16px;font-family:'Playfair Display',serif;font-weight:800;line-height:1.1}
+.event .date span{display:block;font-size:1.8rem}
+.event .date small{font-family:'Inter',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.event h3{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:4px}
+.event p{font-size:.92rem;color:rgba(255,255,255,.8)}
+.back{display:inline-block;margin-top:32px;font-size:.9rem;color:var(--green);font-weight:600;border-bottom:1px solid var(--gold)}
+footer{background:var(--green-2);color:rgba(255,255,255,.62);font-size:.75rem;padding:22px 0;text-align:center}
+footer a{color:var(--gold-lt)}
+@media (max-width:560px){
+  main{padding:28px 0 48px}
+  .card{padding:34px 20px}
+  .docs{grid-template-columns:1fr}
+  .event{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="samba-bar"></div>
+<div class="top">
+  <div class="wrap brand">
+    <img src="assets/logo-cury.png" alt="Cury" />
+    <span class="sep"></span>
+    <b>Dona Ivone Lara</b>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+    <section class="card">
+      <div class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <span class="eyebrow">Cadastro confirmado</span>
+      <h1 id="tyTitle">Recebemos seu cadastro!</h1>
+      <p class="lead">Você já está na lista de prioridade do <b>Residencial Dona Ivone Lara</b>. Um especialista Cury vai te atender no WhatsApp com as condições do lançamento e a simulação para a sua renda.</p>
+      <a href="#" id="tyWpp" class="btn btn-wpp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar com o especialista agora
+      </a>
+      <p class="timer" id="tyTimer"></p>
+    </section>
+
+    <h2 class="sec-title">O que acontece agora</h2>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><div><h3>Atendimento no WhatsApp</h3><p>O especialista confirma seus dados e tira suas dúvidas sobre 1 e 2 quartos com varanda.</p></div></div>
+      <div class="step"><span class="n">2</span><div><h3>Simulação com a sua renda</h3><p>Você descobre o valor da parcela, o subsídio do Minha Casa Minha Vida e como usar o FGTS na entrada.</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3>Prioridade na escolha da unidade</h3><p>Quem está na lista escolhe primeiro andar, posição e vista no dia do lançamento.</p></div></div>
+    </div>
+
+    <h2 class="sec-title">Adiante a sua aprovação</h2>
+    <p class="sec-sub">Separe estes documentos. Com eles a análise de crédito sai bem mais rápido.</p>
+    <ul class="docs">
+      <li>RG e CPF (ou CNH)</li>
+      <li>Comprovante de renda</li>
+      <li>Comprovante de residência</li>
+      <li>Certidão de estado civil</li>
+      <li>Extrato do FGTS (se tiver)</li>
+      <li>Carteira de trabalho</li>
+    </ul>
+
+    <div class="event">
+      <div class="date"><span>15</span><small>Outubro</small></div>
+      <div>
+        <h3>Meeting de lançamento às 16h, no Porto</h3>
+        <p>Com samba ao vivo. Peça seu convite ao especialista no WhatsApp.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center"><a href="index.html" class="back">Voltar para o site do Residencial Dona Ivone Lara</a></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Central de Vendas Cury · CRECI 23.670-J · Página de divulgação de corretor autorizado · <a href="politica-de-privacidade.html">Política de Privacidade</a></div>
+</footer>
+
+<script>
+(function(){
+  var msg = (LEAD && LEAD.msg) || ('Olá! Acabei de me cadastrar na página do *' + TY.empreendimento + '* e quero as condições do lançamento.');
+  var link = 'https://wa.me/' + TY.whatsapp + '?text=' + encodeURIComponent(msg);
+  var btn = document.getElementById('tyWpp');
+  btn.setAttribute('href', link);
+
+  if (LEAD && LEAD.nome) {
+    var primeiro = String(LEAD.nome).split(/\s+/)[0];
+    primeiro = primeiro.charAt(0).toUpperCase() + primeiro.slice(1).toLowerCase();
+    document.getElementById('tyTitle').textContent = 'Recebemos seu cadastro, ' + primeiro + '!';
+  }
+
+  btn.addEventListener('click', function(){
+    if (window.fbq) fbq('trackCustom', 'ObrigadoWhatsClick', { origem: ORIGEM });
+    if (window.gtag) gtag('event', 'obrigado_whatsapp_click', { origem: ORIGEM });
+  });
+
+  /* Abre o WhatsApp sozinho só logo após o envio do formulário (não em visita direta/recarregamento) */
+  var timer = document.getElementById('tyTimer');
+  if (CONTAR_LEAD) {
+    var s = TY.segundosParaWhats;
+    var tick = function(){
+      if (s <= 0) { timer.innerHTML = 'Abrindo o WhatsApp...'; location.href = link; return; }
+      timer.innerHTML = 'Abrindo o WhatsApp em <b>' + s + 's</b>. Se não abrir, toque no botão acima.';
+      s--; setTimeout(tick, 1000);
+    };
+    tick();
+  }
+})();
+</script>
+</body>
+</html>
