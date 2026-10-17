@@ -330,9 +330,10 @@ footer a:hover{color:var(--gold-lt)}
 <section class="hero">
   <div class="hero-bg">
     <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/ivone-hero-poster.jpg" aria-label="Filme oficial do Residencial Dona Ivone Lara">
-      <source src="assets/video/ivone-hero-mob.mp4" type="video/mp4" media="(max-width: 768px)" />
+      <source src="assets/video/ivone-hero-mob-v.mp4" type="video/mp4" media="(max-width: 768px) and (orientation: portrait)" />
       <source src="assets/video/ivone-hero-720.mp4" type="video/mp4" />
     </video>
+    <script>try{if(matchMedia('(max-width: 768px) and (orientation: portrait)').matches){document.getElementById('heroVideo').poster='assets/img/ivone-hero-poster-mob.jpg';}}catch(e){}</script>
   </div>
   <div class="container">
     <div class="hero-copy">
